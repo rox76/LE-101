@@ -1,27 +1,13 @@
 #include <unistd.h>
 
-int	ft_putchar(char c)
-{
-	write(1, &c, 1);
-	return(0);
-}
-
 void	ft_print_alphabet(void)
 {
 	int i;
 	i = 97;
 
-	while(i <= 122)
+	while (i < 123)
 	{
-		ft_putchar(i);
+		write(1, &i, 1);
 		i++;
 	}
-}
-
-int	main()
-{
-	ft_print_alphabet();
-	ft_putchar('\n');
-
-	return (0);
 }

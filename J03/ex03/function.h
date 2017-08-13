@@ -1,5 +1,20 @@
-#include "function.h"
+#include <unistd.h>
 
+int 	ft_putchar(char c)
+{
+	write(1,&c, 1);
+	return (1);
+}
+
+int	ft_nputchar(char c, int n)
+{
+	while(n > 0)
+	{
+		ft_putchar(c);
+		n--;
+	}
+	return(0);
+}
 void 	ft_putnbr(int nb)
 {
 	if(nb < 0)
@@ -18,10 +33,4 @@ void 	ft_putnbr(int nb)
 		ft_putchar(nb);
 	}
 
-}
-int	main (void)
-{
-	ft_putnbr(1050604);
-	ft_putchar('\n');
-	return (0);
 }
