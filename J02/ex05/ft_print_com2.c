@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include "function.h"
 
 void	ft_print_comb2(void)
 {
@@ -91,6 +91,6 @@ void	ft_print_comb2(void)
 int	main(void)
 {
 	ft_print_comb2();
-	write(1, "\n", 1);
+	ft_putchar('\n');
 	return (0);
 }
