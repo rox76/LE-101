@@ -13,8 +13,6 @@ void	ft_print_comb2(void)
 	b = '0';
 	c = '0';
 	d = '0';
-	e = ',';
-	f = ' ';
 
 	while (a <= '9')
 	{
@@ -22,16 +20,13 @@ void	ft_print_comb2(void)
 		{
 			write(1, &a, 1);
 			write(1, &b, 1);
-			write(1, &f, 1);
+			ft_putchar(' ');
 			write(1, &c, 1);
 			write(1, &d, 1);
-			if (a == '9' && b == '8')
+			if (!(a == '9' && b == '8'))
 			{
-			}
-			else
-			{
-				write(1, &e, 1);
-				write(1, &f, 1);
+				ft_putchar(',');
+				ft_putchar(' ');
 			}
 		}
 		if (a == '9' && (b == '7' || b == '8') && c == '9' && d == '9')
