@@ -13,8 +13,8 @@ void	ft_print_comb2(void)
 	b = '0';
 	c = '0';
 	d = '0';
-	e = 44;
-	f = 32;
+	e = ',';
+	f = ' ';
 
 	while (a <= '9')
 	{
