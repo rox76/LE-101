@@ -25,17 +25,11 @@ void	ft_print_comb2(void)
 			write(1, &f, 1);
 			write(1, &c, 1);
 			write(1, &d, 1);
-			if (a == '9')
+			if (a == '9' && b == '8')
 			{
-				if (b != '8')
-				{
-				write(1, &e, 1);
-				write(1, &f, 1);
-				}
 			}
 			else
-			{
-				write(1, &e, 1);
+			{	write(1, &e, 1);
 				write(1, &f, 1);
 			}
 		}
