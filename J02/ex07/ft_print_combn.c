@@ -2,22 +2,41 @@
 
 void	ft_print_combn(int n)
 {
-	int 	cmptr_n;
-	int	cmptr_chiffres;
-	int	nfois[n];
-	int	chiffres[99];
-	int	*tablo2x[2];
+	int i;
+	int tablo[n][10];
+	int y;
+	int x;
+	int w;
+	
+	i = 0;
+	y = 0;
+	x = 0;
+	w = 0;
 
-	tablo2x[0] = nfois;
-	tablo2x[1] = chiffres;
-	cmptr_n = 0;
-	cmptr_chiffres = 0;
-
-	while (cmptr_n < n)
+	while (i < n)
 	{
-		ft_putchar();	
-	}
+		tablo[i][y] = y + 48;
+		if (!(i - 1 < 0) && (tablo [i][y] > tablo [i - 1][y]))
+		{
+			while(x < i)
+			{
+				ft_putchar(tablo[x][w]);
+				w ++;
+				if (w == 9)
+				{
+					w = 0;
+					x ++;
+				}
+			}
+			x = 0;
+		}
+		y ++;
+		if (y == 9)
+		{
+			i ++;
+		}
 
+	}
 }
 
 int	main(void)

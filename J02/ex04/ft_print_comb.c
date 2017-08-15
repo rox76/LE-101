@@ -8,7 +8,6 @@ void	ft_print_comb(void)
 	int d;
 	int e;
 
-	//a = b = c = 48;
 	a = 48;
 	b = 48;
 	c = 48;
