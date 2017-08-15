@@ -18,11 +18,11 @@ void	ft_print_comb2(void)
 	{
 		if (d > b)
 		{
-			write(1, &a, 1);
-			write(1, &b, 1);
+			ft_putchar(a);
+			ft_putchar(b);
 			ft_putchar(' ');
-			write(1, &c, 1);
-			write(1, &d, 1);
+			ft_putchar(c);
+			ft_putchar(d);
 			if (!(a == '9' && b == '8'))
 			{
 				ft_putchar(',');
