@@ -32,10 +32,9 @@ char	*ft_strrev(char *str)
 
 int	main(void)
 {
-	char	*ptr;
+	char	ptr[] = "Hello wold";
 	char	*ptr2;
 
-	ptr = "Hello wold";
 	ptr2 = ft_strrev(ptr);
 	ft_putstr(ptr2);
 	ft_putchar('\n');
