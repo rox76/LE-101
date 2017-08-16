@@ -4,6 +4,7 @@ char	*ft_strrev(char *str)
 {
 	int cmptr;
 	int i;
+	char *temp;
 
 	cmptr = i = 0;
 
@@ -12,7 +13,7 @@ char	*ft_strrev(char *str)
 		cmptr ++;
 	}
 	
-	char	temp[cmptr];
+	//char	temp[cmptr];
 
 	while (cmptr >= 0)
 	{
