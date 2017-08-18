@@ -13,17 +13,16 @@ char	*ft_strrev(char *str)
 		cmptr ++;
 	}
 	
-	//char	temp[cmptr];
 
 	while (cmptr >= 0)
 	{
-		temp[i] = *(str + cmptr);
+		*(temp + i) = *(str + cmptr);
 		cmptr --;
 		i ++;
 	}
 	while (cmptr <= i)
 	{
-		*(str + cmptr) = temp[cmptr];
+		*(str + cmptr) = *(temp + cmptr);
 	}
 
 
@@ -38,7 +37,6 @@ int	main(void)
 	i = 0;
 
 	ptr2 = ft_strrev(ptr);
-//	ft_putstr(ptr2);
 	while (*(ptr + i))
 	{
 		ft_putchar(*(ptr + i));
