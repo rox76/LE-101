@@ -42,7 +42,7 @@ int	ft_atoi(char *str)
 int	main(void)
 {
 	int a;
-	char chaine[] = "455";
+	char chaine[] = "i455";
 	a = atoi (chaine);
 //	a = ft_atoi(chaine);
 	ft_putnbr(a);
