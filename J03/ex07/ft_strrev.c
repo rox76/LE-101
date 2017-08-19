@@ -9,7 +9,7 @@ char	*ft_strrev(char *str)
 	counter = 0;
 	size_str = 0;
 
-	while (*(str + size_str) != '\0')
+	while (*(str + size_str))
 	{
 		size_str ++;
 	}
@@ -33,11 +33,13 @@ int	main(void)
 	i = 0;
 
 	ft_strrev(ptr);
-	while (ptr[i] != '\0')
+	ft_putstr(ptr);
+	/*c est pareil que ft_putstr :)
+	while (ptr[i])
 	{
 		ft_putchar(*(ptr + i));
 		i ++;
-	}
+	}*/
 	ft_putchar('\n');
 	return(0);
 }
