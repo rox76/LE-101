@@ -9,7 +9,7 @@ char	*ft_strrev(char *str)
 	counter = 0;
 	size_str = 0;
 
-	while (*(str + size_str))
+	while (*(str + size_str) != '\0')
 	{
 		size_str ++;
 	}
@@ -28,7 +28,7 @@ char	*ft_strrev(char *str)
 
 int	main(void)
 {
-	char	ptr[] = "Hello wold";
+	char	ptr[] = "Hello world";
 	int i;
 	i = 0;
 
