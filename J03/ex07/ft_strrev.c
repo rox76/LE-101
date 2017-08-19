@@ -13,7 +13,7 @@ char	*ft_strrev(char *str)
 	{
 		size_str ++;
 	}
-	size_str -= 1;
+	size_str --;
 
 	while (counter < size_str)
 	{
