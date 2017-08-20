@@ -15,8 +15,7 @@ int	ft_recursive_power(int nb, int power)
 	}
 	else
 	{
-		nb += ft_recursive_power(nb, power - 1);
-		nb *= i;
+		nb *= ft_recursive_power(nb, power - 1);
 		return (nb);
 	}
 }
@@ -25,7 +24,7 @@ int	main(void)
 {
 	int *a;
 	int i;
-	i = ft_recursive_power(2, 10);
+	i = ft_recursive_power(5, 5);
 	a = &i;
 	ft_putnbr(*a);
 	ft_putchar('\n');
