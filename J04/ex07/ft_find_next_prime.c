@@ -1,5 +1,4 @@
 #include "function.h"
-//Remplacer les return(0) par des ft_find_next_prime(nb +1)
 int	ft_find_next_prime(int nb)
 {
 	int i;
