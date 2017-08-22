@@ -14,12 +14,9 @@ int	ft_find_next_prime(int nb)
 	{
 		while (i <= 9)
 		{
-			if (i != nb)
+			if (i != nb && nb % i == 0)
 			{
-				if (nb % i == 0)
-				{
 					return(ft_find_next_prime(nb +1));//on met un return pour finir cette fonction et en commencer une autre
-				}
 			}
 			i ++;
 		}
@@ -33,7 +30,7 @@ int	main(void)
 
 	i = 0;
 
-	while (i < 50)
+	while (i < 100)
 	{
 		ft_putnbr(i);
 		write(1, " = ", 3);
